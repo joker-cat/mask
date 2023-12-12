@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            width: 50%;
+            height: 30vh;
+            background-image: url('./bg.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        section::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('./splash.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            mix-blend-mode: screen;
+        }
+        div{
+            width: 50%;
+            height: 30vh;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        div:nth-of-type(1){
+            background-image: url('./bg.jpg');
+        }
+        div:nth-of-type(2){
+            background-image: url('./splash.jpg');
+        }
+    </style>
+</head>
+<body>
+    <div style="margin-bottom: 30px;"></div>
+    <div style="margin-bottom: 30px;"></div>
+    <section></section>
+</body>
+</html>
